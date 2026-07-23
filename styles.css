@@ -1,0 +1,41 @@
+body {
+  background-color: #faf5ee;
+  color: #2f2a25;
+}
+
+header,
+footer {
+  background: #4a2d1f;
+  color: #f6edd3;
+}
+
+h1,
+h2 {
+  color: #482c1e;
+}
+
+nav a {
+  color: #faf5ee;
+  text-decoration: none;
+}
+
+a {
+  color: #faf5ee;
+}
+
+.brand {
+  font-family: fantasy;
+  color: #722f37;
+}
+
+.tagline {
+  font-family: fantasy;
+  font-style: italic;
+  color: #722f37;
+}
+
+.price {
+  font-style: oblique;
+  color: #722f37;
+  text-decoration-line: underline;
+}
