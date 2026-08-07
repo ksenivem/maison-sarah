@@ -113,3 +113,65 @@ main {
 .card img {
   width: 100%;
 }
+
+.field {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  padding: 0.8rem;
+  border: 1px solid #c9bda9;
+  width: 100%;
+  max-width: 40rem;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+.choice label {
+  display: inline;
+  font-weight: 400;
+}
+
+.field:focus {
+  outline: 3px solid #e9b872;
+}
+
+.field:required {
+  outline: 3px solid #c63838;
+}
+
+input {
+  accent-color: #8a5a2e;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #e3d9c9;
+  padding: 0.8rem 1.2rem;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2e9db;
+}
+
+thead {
+  background-color: #4a2d1f;
+  color: #ffffff;
+}
+
+.weekend-note {
+  background-color: #cbb2b2;
+  color: #000000;
+}
+
+.order-button {
+  background-color: #4a2d1f;
+  color: #ffffff;
+  padding: 8px 18px;
+}

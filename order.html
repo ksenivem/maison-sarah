@@ -26,7 +26,215 @@
     <main>
       <div class="container">
         <h1 class="brand">Order</h1>
-        <p>Pre-order form is coming soon</p>
+        <h2>Pre-Order Form</h2>
+        <form method="GET" action="#">
+          <fieldset>
+            <legend>Customer Information</legend>
+            <div class="field">
+              <label for="customer-name">Your Name</label>
+              <input
+                type="text"
+                id="customer-name"
+                name="customer-name"
+                required
+                placeholder="Your Name"
+              />
+
+              <label for="customer-email">Your Email address</label>
+              <input
+                type="email"
+                id="customer-email"
+                name="customer-email"
+                required
+                placeholder="Your Email address"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Pickup Details</legend>
+            <div class="field">
+              <label for="pickup-day">Pickup Day</label>
+              <div class="choice">
+                <input
+                  type="radio"
+                  id="day-monday"
+                  name="pickup-day"
+                  value="monday"
+                />
+                <label for="day-monday">Monday</label>
+              </div>
+              <div class="choice">
+                <input
+                  type="radio"
+                  id="day-tuesday"
+                  name="pickup-day"
+                  value="tuesday"
+                />
+                <label for="day-tuesday">Tuesday</label>
+              </div>
+              <div class="choice">
+                <input
+                  type="radio"
+                  id="day-wednesday"
+                  name="pickup-day"
+                  value="wednesday"
+                />
+                <label for="day-wednesday">Wednesday</label>
+              </div>
+              <div class="choice">
+                <input
+                  type="radio"
+                  id="day-thursday"
+                  name="pickup-day"
+                  value="thursday"
+                />
+                <label for="day-thursday">Thursday</label>
+              </div>
+              <div class="choice">
+                <input
+                  type="radio"
+                  id="day-friday"
+                  name="pickup-day"
+                  value="friday"
+                />
+                <label for="day-friday">Friday</label>
+              </div>
+              <div class="choice">
+                <input
+                  type="radio"
+                  id="day-saturday"
+                  name="pickup-day"
+                  value="saturday"
+                  checked
+                />
+                <label for="day-saturday">Saturday</label>
+              </div>
+              <div class="choice">
+                <input
+                  type="radio"
+                  id="day-sunday"
+                  name="pickup-day"
+                  value="sunday"
+                />
+                <label for="day-sunday">Sunday</label>
+              </div>
+              <label for="pickup-time">Pickup time</label>
+              <select id="pickup-time" name="pickup-time" required>
+                <option value="">Choose a timeslot</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="16:00">17:00</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Your order</legend>
+            <div class="field">
+              <label for="product-list">Product List</label>
+              <div class="choice">
+                <input
+                  type="checkbox"
+                  id="grilled-cheese-sandwich"
+                  name="products"
+                  value="grilled-cheese-sandwich"
+                />
+                <label for="grilled-cheese-sandwich"
+                  >Grilled Cheese Sandwich</label
+                >
+              </div>
+              <div class="choice">
+                <input
+                  type="checkbox"
+                  id="lentil-pie"
+                  name="products"
+                  value="lentil-pie"
+                />
+                <label for="lentil-pie">Lentil Pie</label>
+              </div>
+              <div class="choice">
+                <input
+                  type="checkbox"
+                  id="carrot-cake"
+                  name="products"
+                  value="carrot-cake"
+                />
+                <label for="carrot-cake">Carrot Cake</label>
+              </div>
+              <div class="choice">
+                <input
+                  type="checkbox"
+                  id="strawberry-donut"
+                  name="products"
+                  value="strawberry-donut"
+                />
+                <label for="strawberry-donut">Strawberry Donut</label>
+              </div>
+              <div class="choice">
+                <input
+                  type="checkbox"
+                  id="walnuss-bread"
+                  name="products"
+                  value="walnuss-bread"
+                />
+                <label for="walnuss-bread">Walnuss Bread</label>
+              </div>
+              <div class="choice">
+                <input
+                  type="checkbox"
+                  id="sourdough-sandwich-loaf"
+                  name="products"
+                  value="sourdough-sandwich-loaf"
+                />
+                <label for="sourdough-sandwich-loaf"
+                  >Sourdough Sandwich Loaf</label
+                >
+              </div>
+              <div class="choice">
+                <input
+                  type="checkbox"
+                  id="marble-cake"
+                  name="products"
+                  value="marble-cake"
+                />
+                <label for="marble-cake">Marble Cake</label>
+              </div>
+              <div class="choice">
+                <input
+                  type="checkbox"
+                  id="crumble-cake"
+                  name="products"
+                  value="crumble-cake"
+                />
+                <label for="crumble-cake">Crumble Cake</label>
+              </div>
+              <div class="choice">
+                <input
+                  type="checkbox"
+                  id="coconut-croissant"
+                  name="products"
+                  value="coconut-croissant"
+                />
+                <label for="coconut-croissant">Coconut Croissant</label>
+              </div>
+              <label for="order-details">Your order details and requests</label>
+              <textarea
+                id="order-details"
+                name="order-details"
+                placeholder="Order Details"
+              ></textarea>
+              <br />
+              <button type="submit" class="order-button">
+                Submit your Order
+              </button>
+            </div>
+          </fieldset>
+        </form>
       </div>
     </main>
     <footer>
